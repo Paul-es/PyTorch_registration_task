@@ -10,7 +10,7 @@ xTrain, xTest, yTrain, yTest = train_test_split(
     x, y, test_size=0.2, random_state=0)
 
 regr = LinearRegression()
-class Linear(object):
+class LinearRegression(object):
 
   def __init__(self,_input,_output):
     self._input=_input
@@ -29,6 +29,6 @@ class Linear(object):
       
 
 
-p=Linear(xTrain,yTrain)
+p=LinearRegression(xTrain,yTrain)
 p.fit()
 p.predict()
